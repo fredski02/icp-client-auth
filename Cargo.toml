@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/client-auth-backend"
+]
+resolver = "2"

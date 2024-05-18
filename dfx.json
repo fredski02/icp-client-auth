@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "client-auth-backend": {
+      "candid": "src/client-auth-backend/client-auth-backend.did",
+      "package": "client-auth-backend",
+      "type": "rust"
+    },
+    "client-auth-frontend": {
+      "dependencies": [
+        "client-auth-backend"
+      ],
+      "source": [
+        "src/client-auth-frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
